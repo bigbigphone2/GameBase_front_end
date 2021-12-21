@@ -1,0 +1,10 @@
+{
+    "ListingTitle": "Listing Title",
+    "Price": "Price",
+    "MeetUpPlace": "Meet Up Place",
+    "Contact Method": "Contact Method",
+    "SuitForConsole":"Suit for Console",
+    "Description":"Description (Optional)",
+    "CreateANewPost": "Create a New Post",
+    "Welcome to React": "Welcome to React and react-i18next"
+  }
