@@ -15,6 +15,7 @@ const PersonalSingleGame = ({post_id, price, place ,title,type}) => {
           headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json;charset=UTF-8',
+            'x-auth-token': localStorage.getItem('token')
           },
           data: data
         };

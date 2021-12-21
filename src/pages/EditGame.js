@@ -11,7 +11,7 @@ export default function EditGame() {
     const userID = useSelector((state) => state.userInfo).UserID;
     const [postID,setPostID] = useState(-1);
     const [title,setTitle] = useState('');
-    const [type, setType] = useState('ps');
+    const [type, setType] = useState('PS');
     const [price,setPrice] = useState(0);
     const [place,setPlace] = useState('');
     const [contact,setContact] = useState('');
@@ -46,13 +46,14 @@ export default function EditGame() {
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json;charset=UTF-8',
+          'x-auth-token': localStorage.getItem('token')
         },
         data: data
       };
       axios(options)
             .then(response=>{
                 alert("Successfully edit the post.");  
-                navigate('/personal')
+                navigate(-1)
                 setProblem(false)
             })
             .catch(err=>{

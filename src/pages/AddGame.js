@@ -13,7 +13,7 @@ export default function AddGame() {
     const userID = useSelector((state) => state.userInfo).UserID;
     const logged = useSelector((state) => state.logged);
     const [title,setTitle] = useState('');
-    const [type, setType] = useState('ps');
+    const [type, setType] = useState('PS');
     const [price,setPrice] = useState(0);
     const [place,setPlace] = useState('');
     const [contact,setContact] = useState('');
@@ -40,8 +40,6 @@ export default function AddGame() {
 
     const handleSubmit = (e) =>{
       e.preventDefault();
-      console.log(userID)
-      //console.log(user);
       const data ={user_id:userID,title, content, price, place, contact,type};
       const options = {
         url: `${config.apiGameList_for_develop+"/create_post"}`,
