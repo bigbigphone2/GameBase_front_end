@@ -1,6 +1,4 @@
 {
-    "apiGameList_for_develop": "http://127.0.0.1:3000/api/posts",
-    "apiUserList": "http://127.0.0.1:3000/api/users",
-    "apiGame":"https://gametradingplatform.herokuapp.com/api/products/",
-    "apiGameList": "https://gametradingplatform.herokuapp.com/api/products"
+    "apiGameList_for_develop": "https://gamebase20.herokuapp.com/api/posts",
+    "apiUserList": "https://gamebase20.herokuapp.com/api/users"
 }

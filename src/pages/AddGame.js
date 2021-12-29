@@ -33,7 +33,6 @@ export default function AddGame() {
         }
       }
       redirect();
-      console.log(logged);
       
     },[''])
 
