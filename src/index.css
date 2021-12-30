@@ -678,3 +678,11 @@ AddGame
   padding-left: 1rem;
   transition: var(--transition);
 }
+/* loading */
+.loader {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

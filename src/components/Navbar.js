@@ -56,7 +56,7 @@ function NavBar() {
               </Link>
               <div className='nav-log'>              
                 {!logged && <h4 className='nav-left-font' onClick={()=>dispatch(RegisterWindow())}>Register</h4>}
-                {logged && <Link className='nav-left-font' to="personal"><h4>{userName}</h4></Link>}
+                {logged && <Link className='nav-left-font' style={{color:'#b33c34'}} to="personal"><h4>{userName}</h4></Link>}
                 {logged ? <h4  className='nav-right-font' onClick={()=>dispatch(LogOUT())}>Log OUT</h4>:<h4 className='nav-right-font' onClick={()=>dispatch(LogINWindow())}>Log IN</h4>}
               </div>
 
